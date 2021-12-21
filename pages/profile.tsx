@@ -24,7 +24,7 @@ const profile = () => {
               </Box>
             </Flex>
             <Text>Holíč</Text>
-            <Text>+421 902 732 704</Text>
+            <Text>+421 902 832 704</Text>
             <Text>contact@nlukas.com</Text>
           </Box>
           <ProfileLogo />

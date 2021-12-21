@@ -37,6 +37,7 @@ const Technologies = () => {
           speed={3000}
           style={{
             textAlign: "center",
+            cursor: "grabbing",
           }}
           breakpoints={{
             320: {
