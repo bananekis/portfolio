@@ -1,7 +1,7 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
-import lukasPF from "../../assets/lukas_pf.png";
+import lukasPF from "../../assets/lukas-pf.png";
 
 const ProfileLogo = () => {
   const bgCircle = useColorModeValue("blue.600", "purple.600");
