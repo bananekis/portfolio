@@ -1,4 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/react";
 import Page from "../components/layouts/Page";
 import ProfileEducation from "../components/profile/ProfileEducation";
 import ProfileExperience from "../components/profile/ProfileExperience";
@@ -10,6 +11,8 @@ import React from "react";
 import StyledButton from "../components/StyledButton";
 
 const profile = () => {
+  const textCV = useColorModeValue("blue.100", "purple.900");
+
   return (
     <Page title="Profile">
       <Flex flexDirection="column" position="relative">
@@ -30,13 +33,13 @@ const profile = () => {
           <ProfileLogo />
         </Flex>
         <ProfileHeading text="Professional Skills" />
-        <ProfileSkills />
+        <ProfileSkills textCV={textCV} />
         <ProfileHeading text="Experience" />
-        <ProfileExperience />
+        <ProfileExperience textCV={textCV} />
         <ProfileHeading text="Education" />
-        <ProfileEducation />
+        <ProfileEducation textCV={textCV} />
         <ProfileHeading text="Language Skills" />
-        <ProfileLanguage />
+        <ProfileLanguage textCV={textCV} />
         <StyledButton text="Contact Me" href="/" />
       </Flex>
     </Page>

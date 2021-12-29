@@ -1,9 +1,14 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Code } from "@chakra-ui/react";
 import { experience } from "../../lib/experience";
+import CVText from "../layouts/CVText";
 import React from "react";
 
-const ProfileExperience = () => {
+interface Props {
+  textCV: string;
+}
+
+const ProfileExperience = ({ textCV }: Props) => {
   return (
     <>
       {experience.map((exp) => (
@@ -19,7 +24,7 @@ const ProfileExperience = () => {
             </Code>
             <Text fontStyle="italic">{exp.date}</Text>
           </Flex>
-          <Box my={3}>
+          <Box my={3} bg={textCV} p={2} borderRadius={5}>
             <Text
               as="i"
               display="block"
@@ -29,17 +34,17 @@ const ProfileExperience = () => {
             >
               {exp.company}
             </Text>
-            <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-              {exp.exp_1}
+            <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+              <CVText>{exp.exp_1}</CVText>
             </Text>
-            <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-              {exp.exp_2}
+            <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+              <CVText>{exp.exp_2}</CVText>
             </Text>
             {!exp.exp_3 ? (
               ""
             ) : (
-              <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-                {exp.exp_3}
+              <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+                <CVText>{exp.exp_3}</CVText>
               </Text>
             )}
           </Box>

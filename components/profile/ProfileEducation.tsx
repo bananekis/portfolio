@@ -1,9 +1,14 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Code } from "@chakra-ui/react";
 import { education } from "../../lib/education";
+import CVText from "../layouts/CVText";
 import React from "react";
 
-const ProfileEducation = () => {
+interface Props {
+  textCV: string;
+}
+
+const ProfileEducation = ({ textCV }: Props) => {
   return (
     <>
       {education.map((edu) => (
@@ -19,34 +24,36 @@ const ProfileEducation = () => {
             </Code>
             <Text fontStyle="italic">{edu.date}</Text>
           </Flex>
-          <Box my={3}>
-            <Text
-              as="i"
-              display="block"
-              mb={3}
-              variant="company"
-              textShadow="1px 1px"
-            >
-              {edu.platform}
+          <Box my={3} p={2} bg={textCV} borderRadius={5}>
+            {edu.platform !== "" && (
+              <Text
+                as="i"
+                display="block"
+                mb={3}
+                variant="company"
+                textShadow="1px 1px"
+              >
+                {edu.platform}
+              </Text>
+            )}
+            <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+              <CVText>{edu.exp_1}</CVText>
             </Text>
-            <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-              {edu.exp_1}
-            </Text>
-            <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-              {edu.exp_2}
+            <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+              <CVText>{edu.exp_2}</CVText>
             </Text>
             {!edu.exp_3 ? (
               ""
             ) : (
               <>
-                <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-                  {edu.exp_3}
+                <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+                  <CVText>{edu.exp_3}</CVText>
                 </Text>
-                <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-                  {edu.exp_4}
+                <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+                  <CVText>{edu.exp_4}</CVText>
                 </Text>
-                <Text fontSize="md" display="flex" alignItems="center" pb={2}>
-                  {edu.exp_5}
+                <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+                  {edu.exp_5 !== "" && <CVText>{edu.exp_5}</CVText>}
                 </Text>
               </>
             )}

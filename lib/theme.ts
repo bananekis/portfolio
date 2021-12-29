@@ -45,7 +45,7 @@ const theme: ThemeConfig = extendTheme({
           bg: mode("gray.200", "whiteAlpha.300")(props),
         }),
         titleCV: (props: ThemeConfig) => ({
-          bg: mode("blue.500", "purple.900")(props),
+          bg: mode("blue.500", "purple.700")(props),
         }),
       },
     },
