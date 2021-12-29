@@ -3,6 +3,13 @@ import { Code } from "@chakra-ui/react";
 import { education } from "../../lib/education";
 import CVText from "../layouts/CVText";
 import React from "react";
+import styled from "@emotion/styled";
+
+export const ProfileBox = styled(Box)`
+  & > div:not(:last-child) {
+    margin-bottom: 2.5em;
+  }
+`;
 
 interface Props {
   textCV: string;
@@ -10,7 +17,7 @@ interface Props {
 
 const ProfileEducation = ({ textCV }: Props) => {
   return (
-    <>
+    <ProfileBox>
       {education.map((edu) => (
         <Box margin="0 auto" width="90%" key={edu.platform}>
           <Flex
@@ -60,7 +67,7 @@ const ProfileEducation = ({ textCV }: Props) => {
           </Box>
         </Box>
       ))}
-    </>
+    </ProfileBox>
   );
 };
 

@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Code } from "@chakra-ui/react";
+import { ProfileBox } from "./ProfileEducation";
 import { experience } from "../../lib/experience";
 import CVText from "../layouts/CVText";
 import React from "react";
@@ -10,7 +11,7 @@ interface Props {
 
 const ProfileExperience = ({ textCV }: Props) => {
   return (
-    <>
+    <ProfileBox>
       {experience.map((exp) => (
         <Box margin="0 auto" width="90%" key={exp.title}>
           <Flex
@@ -50,7 +51,7 @@ const ProfileExperience = ({ textCV }: Props) => {
           </Box>
         </Box>
       ))}
-    </>
+    </ProfileBox>
   );
 };
 

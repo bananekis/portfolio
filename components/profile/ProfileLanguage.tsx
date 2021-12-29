@@ -13,7 +13,7 @@ const ProfileLanguage = ({ textCV }: Props) => {
         flexDirection="column"
         margin="0 auto"
         width="90%"
-        mb={5}
+        mb={10}
         p={2}
         bg={textCV}
         borderRadius={5}
