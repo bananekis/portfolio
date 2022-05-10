@@ -1,5 +1,22 @@
 export const experience = [
   {
+    title: "FE React Developer",
+    date: "2022",
+    company: "Newlife s.r.o",
+    exp_1:
+      "Integrating with web 3.0, building new social media decentralized crossplaform app with DAO support",
+    exp_2:
+      "Techstack: React, Antd design, Overmind.js, Typescript, Git, Gitlab, code reviews",
+  },
+  {
+    title: "FE React Developer",
+    date: "2022",
+    company: "Škoda auto",
+    exp_2:
+      "Techstack: React, Azure DevOps, Material UI, React Final Form, Redux, React Sagas, Docker, Typescript, Jest",
+    exp_3: "Git, Gitlab, code reviews, unit testing",
+  },
+  {
     title: "Javascript/React Developer – Trainee",
     date: "06/2021 – 08/2021",
     company: "SmartBrains",

@@ -24,22 +24,32 @@ const ProfileSkills = ({ textCV }: Props) => {
           </CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
-          <CVText>React.js, Next.js, Redux, Context API</CVText>
+          <CVText>
+            React.js, Next.js, Redux, Context API, React Sagas, Overmind.js
+          </CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
           <CVText>create-react-app, create-next-app</CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
-          <CVText>PHP / AJAX</CVText>
+          <CVText>Antd design, Material UI, Chakra UI and more</CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
-          <CVText>HTML, CSS, styled-compoennts, SASS</CVText>
+          <CVText>
+            styled components, tailwind css, less, sass, BEM technology
+          </CVText>
+        </Text>
+        <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+          <CVText>PHP / AJAX</CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
           <CVText>MySQL (phpMyAdmin, HeidiSQL)</CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
-          <CVText>git, gitlab, Code reviews</CVText>
+          <CVText>Git, Gitlab, code reviews</CVText>
+        </Text>
+        <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+          <CVText>Jest, React testing library</CVText>
         </Text>
       </Flex>
     </>

@@ -104,8 +104,8 @@ const Bio = () => {
             present
           </Text>
           <p style={{ display: "flex" }}>
-            &rarr; Looking for a front-end developer job where I can share my
-            skills
+            &rarr; Currently working as a React FE developer, hit me up with any
+            interesting projects!
           </p>
         </Flex>
       </Box>

@@ -35,9 +35,11 @@ const ProfileExperience = ({ textCV }: Props) => {
             >
               {exp.company}
             </Text>
-            <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
-              <CVText>{exp.exp_1}</CVText>
-            </Text>
+            {exp.exp_1 && (
+              <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
+                <CVText>{exp.exp_1}</CVText>
+              </Text>
+            )}
             <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
               <CVText>{exp.exp_2}</CVText>
             </Text>
