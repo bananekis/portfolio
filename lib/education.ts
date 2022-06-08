@@ -1,5 +1,16 @@
 export const education = [
   {
+    title: "High School of Informatics and Communications",
+    date: "2016 – 2020",
+    platform: "",
+    exp_1:
+      "Certificate: CCNA Routing and Switching: Routing and Switching Essentials",
+    exp_2: "Hackaton competition",
+    exp_3: "Java, C#, C++, Javascript, PHP, .NET",
+    exp_4: "Achieved experiences from IT companies",
+    exp_5: "",
+  },
+  {
     title: "Online Courses",
     date: "2020 – 2021",
     platform: "Learn2Code",
@@ -9,17 +20,7 @@ export const education = [
     exp_4: "Basics of programming and OOP",
     exp_5: "Webrebel 2: PHP",
   },
-  {
-    title: "Secondary School of Informatics and Communications",
-    date: "2016 – 2019",
-    platform: "",
-    exp_1: "High school",
-    exp_2:
-      "Certificate: CCNA Routing and Switching: Routing and Switching Essentials",
-    exp_3: "",
-    exp_4: "",
-    exp_5: "",
-  },
+
   {
     title: "Online Courses",
     date: "2017 – 2019",

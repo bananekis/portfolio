@@ -19,8 +19,8 @@ const ProfileSkills = ({ textCV }: Props) => {
       >
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>
           <CVText>
-            Typescript, JavaScript (ES5/ES6/ES7+), fetch / axios, Rest API,
-            GraphQL
+            Typescript, JavaScript 4+ years (ES5/ES6/ES7+), fetch / axios, Rest
+            API, GraphQL
           </CVText>
         </Text>
         <Text fontSize="md" display="flex" alignItems="baseline" pb={2}>

@@ -36,7 +36,7 @@ const Header = ({ path }: Props) => {
           >
             <Box height="50px">
               <Typist style={{ display: "flex" }}>
-                Hello! 👋 , I{"'"}m front-end developer based in Brno, Czech
+                Hello! 👋 , I{"'"}m front-end developer based in Prague, Czech
                 Republic
               </Typist>
             </Box>
